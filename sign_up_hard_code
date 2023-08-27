@@ -1,0 +1,34 @@
+Imports System.Data.OleDb
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Imports System.Drawing
+Partial Public Class Sign_Up
+    Inherits System.Web.UI.Page
+
+
+    Protected Sub CreateUserWizard1_CreatedUser(ByVal sender As Object, ByVal e As EventArgs) Handles CreateUserWizard1.CreatedUser
+        'connection string
+        Dim my_connection As String = "PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\User\Documents\Visual Studio 2008 2\Projects\EmmaProject 2012 2013 3351\USERS.mdb;"
+        'insert (query string)
+        Dim my_query As String = "INSERT INTO UserAccount( F_RegNo, F_Password, Confirm_Password, E_Mail,S_Question, S_Answer)" & _
+        "VALUES('" & (CreateUserWizard1.UserName) & "', '" & (CreateUserWizard1.Password) & "', '" & (CreateUserWizard1.ConfirmPassword) & "', '" & (CreateUserWizard1.Email) & "','" & (CreateUserWizard1.Question) & "','" & (CreateUserWizard1.Answer) & "')"
+        'create a connection
+        Dim my_dbConnection As New OleDbConnection(my_connection)
+        'create a command
+        Dim my_Command As New OleDbCommand(my_query, my_dbConnection)
+        'connection open
+        my_dbConnection.Open()
+
+        'command execute
+        my_Command.ExecuteNonQuery()
+    End Sub
+
+    Protected Sub ContinueButton_Click1(ByVal sender As Object, ByVal e As EventArgs)
+        'Response.Redirect("AdminPortal.aspx")
+    End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+
+    End Sub
+End Class
