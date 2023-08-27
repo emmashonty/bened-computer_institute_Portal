@@ -1,0 +1,93 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Payment.aspx.vb" Inherits="EmmaProject_2012_2013_3351.Payment" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Payment Page</title>
+    <style type="text/css">
+        .style1
+        {
+            font-family: Impact;
+            font-weight: bold;
+            font-size: xx-large;
+            background-color: #FFFFFF;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body style="background-color: #000000">
+    <form id="form1" runat="server">
+    <div class="style2">
+    
+        <span class="style1">WELCOME TO STUDENTS FEE PAYMENT RECORD PAGE</span></div>
+    <asp:Panel ID="Panel1" runat="server" 
+        style="background-color: #FFFFFF; text-align: center;">
+        &nbsp;&nbsp;<asp:Panel ID="Panel2" runat="server">
+            <div class="style3">
+                <a href="Portal.aspx">Portal</a> <a href="Login.aspx">Logout</a>
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="26px" 
+                    ImageUrl="~/Images/HomeImage.jpg" PostBackUrl="~/Home.aspx" Width="31px" />
+            </div>
+        </asp:Panel>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label13" runat="server" Text="Mat No:"></asp:Label>
+        <asp:TextBox ID="txtMatNo" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label14" runat="server" Text="Names:"></asp:Label>
+        <asp:TextBox ID="txtNames" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...............................<br />
+        </b>
+        <br />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label15" runat="server" Text="Programme:"></asp:Label>
+        <asp:DropDownList ID="txtProg" runat="server">
+            <asp:ListItem>None</asp:ListItem>
+            <asp:ListItem>Advance Diploma Training</asp:ListItem>
+            <asp:ListItem>Certificate Training</asp:ListItem>
+            <asp:ListItem>Engineering Training</asp:ListItem>
+            <asp:ListItem>Other Services Training</asp:ListItem>
+        </asp:DropDownList>
+        <br />
+        <br />
+        &nbsp;&nbsp;
+        <asp:Label ID="Label16" runat="server" Text="Receipt No:"></asp:Label>
+        <asp:TextBox ID="txtReceipt" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label17" runat="server" Text="Bank:"></asp:Label>
+        <asp:TextBox ID="txtBank" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label18" runat="server" Text="Bank Branch:"></asp:Label>
+        <asp:TextBox ID="txtBankB" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label19" runat="server" Text="Date:"></asp:Label>
+        <asp:TextBox ID="txtDate" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label20" runat="server" Text="Amount:"></asp:Label>
+        <asp:TextBox ID="txtAmount" runat="server" Width="250px"></asp:TextBox>
+        <br />
+        <br />
+        <asp:ImageButton ID="btnSubmit" runat="server" 
+            ImageUrl="~/Documents/submitQ.gif" />
+    </asp:Panel>
+    </form>
+</body>
+</html>
