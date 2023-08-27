@@ -1,0 +1,141 @@
+Imports System.Data.OleDb
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Partial Public Class Admin
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+    End Sub
+
+    Protected Sub btnSaveDiploma_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSaveDiploma.Click
+        Dim strSQL As String
+        Dim objCmd As New OleDbCommand
+        Dim Con = New OleDbConnection("PROVIDER=Microsoft.Jet.OLEDB.3.51;Data Source=C:\Users\eee p\Documents\Visual Studio 2008\Projects\EmmaProject 2012 2013 3351\USERS.mdb;")
+        strSQL = "INSERT INTO DiplomaResults(Reg_No, Mat_No, Sur_Name, Other_Names, F_Mavis,F_DPublish, F_AExcel, F_DBDApplic, F_Presentation, F_Internet, F_Date, F_MRmk, F_DPRmk, F_AERmk, F_DBDARmk, F_PRmk, F_IRmk)"
+        strSQL = strSQL & "VALUES('" & (txtRegNo.Text) & "','" & (txtMatNo.Text) & "','" & (txtSurName.Text) & "', '" & (txtOthers.Text) & "', '" & (txtMavis.Text) & "','" & (txtDesktop.Text) & "','" & (txtAccounting.Text) & "','" & (txtDatabase.Text) & "','" & (txtSlide.Text) & "','" & (txtInternet.Text) & "', '" & (txtDate.Text) & "','" & (txtMR.Text) & "','" & (txtDPR.Text) & "','" & (txtAER.Text) & "','" & (txtDBDAR.Text) & "','" & (txtPrR.Text) & "','" & (txtIR.Text) & "');"
+        Con.Open()
+        objCmd = New OleDbCommand(strSQL, Con)
+        objCmd.ExecuteNonQuery()
+        Con.Close()
+        txtRegNo.Text = ""
+        txtMatNo.Text = ""
+        txtSurName.Text = ""
+        txtOthers.Text = ""
+        txtMavis.Text = ""
+        txtDesktop.Text = ""
+        txtAccounting.Text = ""
+        txtDatabase.Text = ""
+        txtSlide.Text = ""
+        txtInternet.Text = ""
+        txtDate.Text = ""
+        txtMR.Text = ""
+        txtDPR.Text = ""
+        txtAER.Text = ""
+        txtDBDAR.Text = ""
+        txtPrR.Text = ""
+        txtIR.Text = ""
+
+        ClientScript.RegisterStartupScript(Page.[GetType](), "validation", "<script language='javascript'>alert('Diploma student result was save successfull')</script>")
+    End Sub
+
+    Protected Sub btnSaveCert_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSaveCert.Click
+        Dim strSQL As String
+        Dim objCmd As New OleDbCommand
+        Dim Con = New OleDbConnection("PROVIDER=Microsoft.Jet.OLEDB.3.51;Data Source=C:\Users\eee p\Documents\Visual Studio 2008\Projects\EmmaProject 2012 2013 3351\USERS.mdb;")
+        strSQL = "INSERT INTO CertificateResults(Reg_No, Mat_No, Sur_Name, Other_Names, F_ICDOS, F_MSWords, F_MSExcel, F_MSAccess, F_MSPPoint, F_CorelDraw, F_Date, F_IRmk, F_MSWRmk, F_MSERmk, F_MSSARmk, F_MSPPRmk, F_CDRmk)"
+        strSQL = strSQL & "VALUES('" & (txtRegNo2.Text) & "','" & (txtMatNo2.Text) & "','" & (txtSurName2.Text) & "', '" & (txtOthers2.Text) & "','" & (txtICDos.Text) & "','" & (txtMSWord.Text) & "','" & (txtMSExcel.Text) & "','" & (txtMSAccess.Text) & "','" & (txtMSPPoint.Text) & "', '" & (txtCDraw.Text) & "', '" & (txtDate2.Text) & "','" & (txtIRmk2.Text) & "','" & (txtMSWordR.Text) & "','" & (txtMSExcelR.Text) & "','" & (txtMSAccessR.Text) & "','" & (txtMSPPointR.Text) & "','" & (txtCDrawR.Text) & "');"
+        Con.Open()
+        objCmd = New OleDbCommand(strSQL, Con)
+        objCmd.ExecuteNonQuery()
+        Con.Close()
+        txtRegNo2.Text = ""
+        txtMatNo2.Text = ""
+        txtSurName2.Text = ""
+        txtOthers2.Text = ""
+        txtICDos.Text = ""
+        txtMSWord.Text = ""
+        txtMSExcel.Text = ""
+        txtMSAccess.Text = ""
+        txtMSPPoint.Text = ""
+        txtCDraw.Text = ""
+        txtDate2.Text = ""
+        txtIRmk2.Text = ""
+        txtMSWordR.Text = ""
+        txtMSExcelR.Text = ""
+        txtMSAccessR.Text = ""
+        txtMSPPointR.Text = ""
+        txtCDrawR.Text = ""
+
+        ClientScript.RegisterStartupScript(Page.[GetType](), "validation", "<script language='javascript'>alert('Certificate student result was save successfull')</script>")
+    End Sub
+
+    Protected Sub btnSaveEngineer_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSaveEngineer.Click
+        Dim strSQL As String
+        Dim objCmd As New OleDbCommand
+        Dim Con = New OleDbConnection("PROVIDER=Microsoft.Jet.OLEDB.3.51;Data Source=C:\Users\eee p\Documents\Visual Studio 2008\Projects\EmmaProject 2012 2013 3351\USERS.mdb;")
+        strSQL = "INSERT INTO EngineeringResults(Reg_No, Mat_No, Sur_Name, Other_Names, F_DOS,F_Software, F_Network, F_Skills, F_Assembling, F_Trouble, F_OHand, F_Date, F_DRmk, F_SRmk, F_NRmk, F_SkRmk, F_AssRmk,F_TRmk,F_ORmk)"
+        strSQL = strSQL & "VALUES('" & (txtRegNo3.Text) & "','" & (txtMatNo3.Text) & "','" & (txtSurName3.Text) & "', '" & (txtOthers3.Text) & "', '" & (txtDOS.Text) & "','" & (txtSoft.Text) & "','" & (txtNet.Text) & "','" & (txtSkills.Text) & "','" & (txtAssem.Text) & "','" & (txtTrouble.Text) & "', '" & (txtOHand.Text) & "','" & (txtDate3.Text) & "','" & (txtDRmk.Text) & "','" & (txtSRmk.Text) & "','" & (txtNRmk.Text) & "','" & (txtSkRmk.Text) & "','" & (txtAssRmk.Text) & "','" & (txtTRmk.Text) & "','" & (txtOHRmk.Text) & "');"
+        Con.Open()
+        objCmd = New OleDbCommand(strSQL, Con)
+        objCmd.ExecuteNonQuery()
+        Con.Close()
+        txtRegNo3.Text = ""
+        txtMatNo3.Text = ""
+        txtSurName3.Text = ""
+        txtOthers3.Text = ""
+        txtDOS.Text = ""
+        txtSoft.Text = ""
+        txtNet.Text = ""
+        txtSkills.Text = ""
+        txtAssem.Text = ""
+        txtTrouble.Text = ""
+        txtOHand.Text = ""
+        txtDate3.Text = ""
+        txtDRmk.Text = ""
+        txtSRmk.Text = ""
+        txtNRmk.Text = ""
+        txtNRmk.Text = ""
+        txtSkRmk.Text = ""
+        txtAssRmk.Text = ""
+        txtTRmk.Text = ""
+        txtOHRmk.Text = ""
+
+        ClientScript.RegisterStartupScript(Page.[GetType](), "validation", "<script language='javascript'>alert('Engineering student result was save successfull')</script>")
+    End Sub
+
+    Protected Sub btnSaveOthers_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnSaveOthers.Click
+        Dim strSQL As String
+        Dim objCmd As New OleDbCommand
+        Dim Con = New OleDbConnection("PROVIDER=Microsoft.Jet.OLEDB.3.51;Data Source=C:\Users\eee p\Documents\Visual Studio 2008\Projects\EmmaProject 2012 2013 3351\USERS.mdb;")
+        strSQL = "INSERT INTO OthersResults(Reg_No, Mat_No, Sur_Name, Other_Names, F_Peach,F_Autocard, F_Archicad, F_Forex, F_Programming, F_Date, F_PRmk, F_ARmk, F_ArRmk, F_FRmk, F_PrRmk)"
+        strSQL = strSQL & "VALUES('" & (txtRegNo4.Text) & "','" & (txtMatNo4.Text) & "','" & (txtSurName4.Text) & "', '" & (txtOthers4.Text) & "', '" & (txtPeach.Text) & "','" & (txtAuto.Text) & "','" & (txtArchi.Text) & "','" & (txtForex.Text) & "','" & (txtProgram.Text) & "', '" & (txtDate4.Text) & "','" & (txtPRmk.Text) & "','" & (txtARmk.Text) & "','" & (txtArRmk.Text) & "','" & (txtFRmk.Text) & "','" & (txtPrRmk.Text) & "');"
+        Con.Open()
+        objCmd = New OleDbCommand(strSQL, Con)
+        objCmd.ExecuteNonQuery()
+        Con.Close()
+        txtRegNo4.Text = ""
+        txtMatNo4.Text = ""
+        txtSurName4.Text = ""
+        txtOthers4.Text = ""
+        txtPeach.Text = ""
+        txtAuto.Text = ""
+        txtArchi.Text = ""
+        txtForex.Text = ""
+        txtProgram.Text = ""
+        txtDate4.Text = ""
+        txtPRmk.Text = ""
+        txtARmk.Text = ""
+        txtArRmk.Text = ""
+        txtFRmk.Text = ""
+        txtPrRmk.Text = ""
+
+        ClientScript.RegisterStartupScript(Page.[GetType](), "validation", "<script language='javascript'>alert('Other Services student result was save successfull')</script>")
+    End Sub
+
+End Class
+
+
+
+
