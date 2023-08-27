@@ -1,0 +1,188 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Developer.aspx.vb" Inherits="EmmaProject_2012_2013_3351.Developer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Developer Page</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 368px;
+        }
+        .style3
+        {
+            width: 360px;
+            text-align: justify;
+        }
+        .style4
+        {
+            height: 376px;
+            font-weight: 700;
+            width: 367px;
+            text-align: center;
+        }
+        .style5
+        {
+            font-size: xx-large;
+        }
+        .style6
+        {
+            font-size: large;
+            font-family: "Agency FB";
+            font-weight: bold;
+        }
+        .style7
+        {
+            width: 367px;
+            text-align: right;
+        }
+        .style10
+        {
+            text-decoration: underline;
+            color: #FF6666;
+            font-size: x-large;
+        }
+        .style11
+        {
+            font-size: xx-large;
+            font-family: "Agency FB";
+            font-weight: bold;
+            color: #0033CC;
+        }
+        .style12
+        {
+            font-size: large;
+            font-family: "Agency FB";
+            color: #FF0000;
+            font-weight: bold;
+        }
+        .style13
+        {
+            text-align: right;
+        }
+        .style14
+        {
+            text-align: center;
+        }
+        .style15
+        {
+            font-size: x-large;
+        }
+        .style16
+        {
+            color: #CC0000;
+            font-size: x-large;
+        }
+        .style17
+        {
+            color: #CC0000;
+        }
+    </style>
+</head>
+<body style="background-color: #99FF99" background="Images/background-31.jpg">
+    <form id="form1" runat="server">
+    <asp:Panel ID="Panel1" runat="server" style="text-align: center">
+        <div class="style14">
+            <asp:Panel ID="Panel2" runat="server">
+                <div class="style13">
+                    &nbsp;<a href="Login.aspx">Logout</a>
+                    <asp:ImageButton ID="ImageButton1" runat="server" 
+                        ImageUrl="~/Images/HomeImage.jpg" PostBackUrl="~/Home.aspx" 
+                        style="text-align: right" />
+                </div>
+            </asp:Panel>
+            <b><span class="style5">ABOUT THE DEVELOPER/BUILDER/PROGRAMMER OF THIS SIDE</span><br 
+                class="style5" />
+            </b>
+        </div>
+        <table class="style1">
+            <tr>
+                <td class="style3" rowspan="2">
+                    <span class="style11">ABOUT ME</span><span class="style6"><br />
+                    I am the son of Mr. &amp; Mrs. Davou Joseph. A student with Federal College of 
+                    Education Pankshin, Plateau State of Nigeria. I am studying B.Ed C. in computer 
+                    science. My favorite programming language is Visual Basic. How I become 
+                    motivated on this language, was because I was been challenge by one ATBU 
+                    undergraduate student of 200 level.&nbsp; He made me when I was working on a system 
+                    and he asked me whether I can help him with the system so that he make 
+                    soomething? I told to him why not? When I gave to him the system, he instantly 
+                    maked a game with visual studio and he run the program and told me to click on 
+                    the &quot;Play&quot; button. I did as he told me. After playing the game, he told me to 
+                    &quot;End&quot; the game I also did as he said. But thewost part of it was when he was 
+                    about to leave. I told him to please help me to know how to make this game? and 
+                    he said to me that no. He told me that before he teache me how to make this 
+                    game, I have to game him N2000, then I told him that I don&#39;t have that amount 
+                    righthere if not I would had gave you so that you teache me how to make the 
+                    game. And he told me that he is going since am not with the money. I begged him 
+                    to please teache me how to make that very game he refused and he left. And then, 
+                    he left me with a challenge. I tried to know how to do something like that, but 
+                    I could&#39;nt. but I keep on trying untill the time that I started making some 
+                    little VB programs. From there, I keep on building from the previous knowledge 
+                    and complex idear of programs keep on adding on my previous knowledge. Now 
+                    brothers, I can make a reasonable program like this. Now , I have a similar to 
+                    the one he refused to teache me. That his game program, now I am loking at it as 
+                    a kidz play because I have complexer programs that i made than his game. Press 
+                    be to Jesus Christ? and to His Father Almighty God?<br />
+                    </span><span class="style12">WORDS OF INCOURAGEMENT</span><span class="style6"><br />
+                    Their friends/users/everyone, take what ever you are doing very seriously for as 
+                    it is written in the Scripture that &quot;no good thing comes easy&quot; and &quot;there is 
+                    nothing is impossible with Faith and hard working&quot;. It is the working hard that 
+                    enabled me to become how I am now, the level I am now, how far I have reach now 
+                    in programming with VB (Visual Basic). There is this wise saying &quot;behind every 
+                    succesfull man, there most be a woman&quot; so I too said &quot;behind every successfull 
+                    programmer, there most be a working hard&quot;. Thank you for taking your time to 
+                    read this my comment. yours sincere Emmanuel Joseph D.</span></td>
+                <td class="style4">
+                    &nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="201px" 
+                        ImageUrl="~/Images/chpx.jpg" Width="151px" />
+                    <br />
+                    <br />
+                    <br />
+                    <span class="style15">DESIGN &amp; IMPLEMENTATION OF A SCHOOL PORTAL (For: Kyenpya 
+                    Computer Foundation Institute, Jos Nigeria).</span><br class="style15" />
+                    <br class="style15" />
+                    <span class="style15">By</span><br class="style15" />
+                    <span class="style15">Joseph Emmanuel Davou (Shonty, Chocho).</span><br 
+                        class="style15" />
+                    <b><span class="style15">Mail</span></b><span class="style15">: </span>
+                    <a href="mailto:showntychocho@yahoo.com"><span class="style15">
+                    showntychocho@yahoo.com</span></a>.<br class="style15" />
+                    <span class="style15">Phone: <span class="style17">08038276123, +08038276132,</span></span><br 
+                        class="style16" />
+                    <span class="style16">08161222765, +08161222765,</span><br class="style16" />
+                    <span class="style16">07093108819, +07093108819,</span><br class="style15" />
+                    <br class="style15" />
+                    <span class="style15">College/University: </span> <span class="style16">Federal College of Education Pankshin, 
+                    Plateau State Nigeria.</span><br class="style15" />
+                    <span class="style15">School: </span> <span class="style16">Sciences</span><span class="style10">.</span><br 
+                        class="style15" />
+                    <span class="style15">Department: </span> <span class="style16">Computer Sciences</span>.<br 
+                        class="style15" />
+                    <span class="style15">Academic Session: </span> <span class="style16">2009/2010.</span><br 
+                        class="style15" />
+                    <span class="style15">Project Date: </span> <span class="style16">2013.</span><br 
+                        class="style15" />
+                    <span class="style15">Registreation Number: </span> <span class="style16">FCEP/DS/SC/01/09/3351.</span><br 
+                        class="style16" />
+                    <br class="style15" />
+                    <br class="style15" />
+                    <br class="style15" />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="Developer.aspx">Close Window</a></td>
+            </tr>
+        </table>
+    </asp:Panel>
+<p>
+                    <asp:ImageButton ID="btnPrint" runat="server" ImageUrl="~/Images/Printer.png" />
+    </p>
+    </form>
+</body>
+</html>
