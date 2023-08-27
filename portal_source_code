@@ -1,0 +1,142 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Portal.aspx.vb" Inherits="EmmaProject_2012_2013_3351.Portal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Portal Page</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 116%;
+            background-color: #FFFFFF;
+            font-weight: 700;
+            font-size: large;
+        }
+        .style4
+        {
+            text-align: center;
+            background-color: #FFFFFF;
+            width: 1106px;
+            height: 97px;
+        }
+        .style5
+        {
+            color: #006600;
+            font-size: large;
+            font-family: Impact;
+            background-color: #FFFFFF;
+        }
+        .style6
+        {
+            text-decoration: none underline;
+        }
+        .style7
+        {
+            width: 212px;
+        }
+        .style8
+        {
+            width: 318px;
+        }
+        </style>
+</head>
+<body style="background-color: #006699">
+    <form id="form1" runat="server">
+    <div class="style4">
+    
+        <b><span class="style5">WOLCOME TO KYENPYA COMPUTER FOUNDATION INSTITUTE JOS&#39;</span><br 
+            class="style5" />
+        <span class="style5">PORTAL PAGE</span></b><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel 
+            ID="Panel1" runat="server">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KCFIJ/SC/<asp:Label ID="Label1" runat="server"></asp:Label>
+            &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Logout</asp:HyperLink>
+            &nbsp; <a href="ChangePassword.aspx">Change Password</a>
+        </asp:Panel>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    </div>
+    <br />
+    <table class="style1">
+        <tr>
+            <td class="style7">
+                &nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton8" runat="server" 
+                    ImageUrl="~/Images/HomeImage.jpg" PostBackUrl="~/Home.aspx" 
+                    Width="151px" Height="171px" />
+                <br />
+                Click on <a href="Home.aspx">home</a> to register your courses</td>
+            <td class="style8">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton2" runat="server" 
+                    ImageUrl="~/Images/kyenpye1.jpg" PostBackUrl="~/Results.aspx" 
+                    Width="230px" />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Click <a class="style6" href="Results.aspx">more</a> to check your result</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Images/IMG_20140725_204045.JPG" 
+                    PostBackUrl="~/Developer.aspx" Width="177px" />
+                <br />
+                Click on <a class="style6" href="Developer.aspx">here</a> to know much about 
+                the designer</td>
+        </tr>
+        <tr>
+            <td class="style7">
+                <asp:ImageButton ID="ImageButton4" runat="server" 
+                    ImageUrl="~/Images/Contract.jpg" PostBackUrl="~/Transcript.aspx" 
+                    Width="228px" Height="254px" />
+                <br />
+                Click on <a class="style6" href="Transcript.aspx">get</a> to receive transcript<br />
+            </td>
+            <td class="style8">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton7" runat="server" 
+                    ImageUrl="~/Images/client.jpeg" PostBackUrl="~/StudentsRegistration.aspx" 
+                    Width="194px" Height="209px" />
+&nbsp;&nbsp;&nbsp;
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Click on <a class="style6" href="StudentsRegistration.aspx">reg</a> to register</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton1" runat="server" 
+                    ImageUrl="~/Images/shont3 1.jpg" PostBackUrl="~/TimeTable.aspx" />
+                <br />
+                Click on <a class="style6" href="TimeTable.aspx">view</a> to see time table</td>
+        </tr>
+        <tr>
+            <td class="style7">
+                &nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton5" runat="server" Height="222px" 
+                    ImageUrl="~/Images/Kyenpy.jpg" PostBackUrl="~/Payment.aspx" 
+                    Width="187px" />
+                <br />
+                Click on <a href="Payment.aspx">enter pay record</a>&nbsp; to pay your fee</td>
+            <td class="style8">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton6" runat="server" 
+                    ImageUrl="~/Images/About.png" PostBackUrl="~/AboutUs.aspx" />
+&nbsp;
+                <br />
+                Click on <a class="style6" href="AboutUs.aspx">more</a> to know about us<br />
+&nbsp;</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton9" runat="server" 
+                    ImageUrl="~/Images/report g.jpeg" PostBackUrl="~/CourseRegister.aspx" 
+                    Width="222px" />
+                <br />
+                Click on <a href="CourseRegister.aspx">course registration</a> to register 
+                your courses<br />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
