@@ -1,60 +1,351 @@
-<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Default.aspx.vb" Inherits="EmmaProject_2012_2013_3351._Default" %>
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Home.aspx.vb" Inherits="EmmaProject_2012_2013_3351.Home" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Welcome Page</title>
+    <title>Home Page</title>
     <style type="text/css">
-        #form1
+        .style1
         {
-            width: 1134px;
+            width: 101%;
+            height: 1106px;
+            font-size: large;
+        }
+        .style3
+        {
+            width: 153px;
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        .style4
+        {
+            background-color: #FFFFFF;
+            width: 444px;
+        }
+        .style8
+        {
+            height: 326px;
+            background-color: #FFFFFF;
+            width: 444px;
+            text-align: center;
+        }
+        .style24
+        {
+            color: #FF0000;
+            font-style: italic;
+            text-align: center;
+        }
+        .style25
+        {
+            color: #CC3300;
+            font-style: italic;
+            text-align: left;
+        }
+        .style28
+        {
+            text-align: center;
+        }
+        .style33
+        {
+            background-color: #FFFFFF;
+            width: 205px;
+            text-align: justify;
+        }
+        .style34
+        {
+            color: #FFFFFF;
+        }
+        .style35
+        {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: large;
+        }
+        .style36
+        {
+            font-size: x-large;
+        }
+        .style38
+        {
+            text-align: left;
+        }
+        .style39
+        {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-family: "Agency FB";
+            font-size: large;
+        }
+        .style41
+        {
+            font-family: "Agency FB";
+            font-size: large;
+            font-weight: bold;
+        }
+        .style42
+        {
+            text-align: right;
         }
     </style>
-    </head>
-<body style="background-color: #9966FF">
+</head>
+<body style="background-color: #000000" 
+    background="Images/Back.jpg">
     <form id="form1" runat="server">
-    <div style="width: 895px">
+    <div>
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-        <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/KyenBana3.jpg" 
-            Height="166px" Width="1321px" />
-            
+        <div class="style28">
+            <div class="style38">
+                <br />
+                <asp:Panel ID="Panel1" runat="server" BackColor="Black" BorderColor="Black" 
+                    style="color: #FFFFFF; text-align: right;">
+                    <div class="style28">
+                        <div class="style42">
+                            <a href="Home.aspx"><span class="style39">Home</span></a><span class="style41">&nbsp;</span><span 
+                                class="style34"><span class="style41">&nbsp;</span> <a href="AdminLogin.aspx">
+                            <span class="style39">Administrator</span></a></span><span class="style41">&nbsp; &nbsp;</span><a 
+                                href="Developer.aspx"><span class="style39">Developer</span></a><span 
+                                class="style41">&nbsp;&nbsp; </span><a href="Login.aspx"><span class="style39">Sign-In</span></a><span 
+                                class="style41">&nbsp; &nbsp;&nbsp; </span></div>
+                        <asp:Panel ID="Panel2" runat="server" style="text-align: left">
+                            <asp:ImageButton ID="ImageButton3" runat="server" Height="40px" 
+                                ImageUrl="~/Images/HomeImage.jpg" PostBackUrl="~/Home.aspx" Width="40px" />
+                            &nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="40px" 
+                                ImageUrl="~/Images/client.jpeg" PostBackUrl="~/StudentsAdmission.aspx" 
+                                Width="40px" />
+                            &nbsp; &nbsp;<asp:ImageButton ID="ImageButton5" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Login Icon (2).png" PostBackUrl="~/Login.aspx" 
+                                Width="40px" />
+                            &nbsp;&nbsp;<asp:ImageButton ID="ImageButton6" runat="server" Height="40px" 
+                                ImageUrl="~/Images/About.png" PostBackUrl="~/AboutUs.aspx" Width="40px" />
+                            &nbsp;&nbsp;<asp:ImageButton ID="btnPrint" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Printer.png" Width="40px" />
+                            &nbsp;&nbsp;<asp:ImageButton ID="ImageButton8" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Save.jpg" Width="40px" />
+                            &nbsp;&nbsp;<asp:ImageButton ID="ImageButton9" runat="server" Height="40px" 
+                                ImageUrl="~/Documents/Report.png" PostBackUrl="~/AdminLogin.aspx" 
+                                Width="40px" />
+                            &nbsp;<asp:ImageButton ID="ImageButton10" runat="server" Height="40px" 
+                                ImageUrl="~/Images/images.jpg" PostBackUrl="~/StaffAdmission.aspx" 
+                                Width="40px" />
+&nbsp; <asp:ImageButton ID="ImageButton12" runat="server" Height="40px" 
+                                ImageUrl="~/Images/console1.jpeg" PostBackUrl="~/AdminLogin.aspx" 
+                                Width="40px" />
+                            &nbsp;&nbsp;<asp:ImageButton ID="ImageButton11" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Help.jpg" Width="40px" />
+                        </asp:Panel>
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
     </div>
-    <asp:Panel ID="Panel1" runat="server" style="background-color: #9966FF">
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/KyenLogo.jpg" 
-            Width="180px" />
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        &nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx" 
-            
-            
-            style="font-weight: 700; font-size: xx-large; color: #003399; background-color: #9966FF;" 
-            BackColor="#6600FF">.............Continue</asp:HyperLink>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        &nbsp;
-    </asp:Panel>
+    <table class="style1">
+        <tr>
+            <td rowspan="2" class="style33">
+                Welcome to Kyenpya Computer Found atiom Institute located at No. 1C NUT 
+                Building, 1st Flr. 2nd Rm.2 Yelwa Club Junction, Rayfield Road Bukuru, Jos 
+                Plateau State where training is made just for your field of interest to cope 
+                with the volume of paper works on your tabletops, at home or in the office. to 
+                help you manage your work space and time, we have list of trainings prepared to 
+                suit your need(s) and time in this millenium. our training covers from getting 
+                started with computer to working with files/folders, and other apllications and 
+                managing your system, for optional functionality.<br />
+                There are literally Tens of students of Application software available today in 
+                the market that you can buy to manage your e-Business, office and personal data.<br />
+                <br />
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/shont2 1.jpg" 
+                    Height="139px" Width="240px" />
+                <br />
+&nbsp;<span class="style24">Students Simulation Session<br />
+                </span>
+            </td>
+            <td class="style8">
+                &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnDeveloper" runat="server" 
+                    style="font-weight: 700; font-family: 'Agency FB'; font-size: x-large;" 
+                    Text="Students Admission" PostBackUrl="~/StudentsAdmission.aspx" 
+                    Height="42px" Width="161px" />
+                &nbsp;<asp:Button ID="btnStaffAdm" runat="server" 
+                    style="font-weight: 700; font-family: 'Agency FB'; font-size: x-large;" Text="Staff Job Application" 
+                    PostBackUrl="~/StaffAdmission.aspx" Height="41px" Width="180px" />
+                <b><span class="style36">
+                <br class="style34" />
+                </span></b><span class="style36"><span class="style35">Click on Portal below to 
+                Login as a student of this side or</span><b><br class="style34" />
+                </b>&nbsp;</span><span class="style34"><b><br />
+                <br />
+                <br />
+                <br />
+                <br />
+                                f you don&#39;t have an accout</b></span><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:Button ID="Button1" runat="server" BackColor="#006600" 
+                    Font-Size="XX-Large" ForeColor="White" PostBackUrl="~/Login.aspx" 
+                    Text="    Portal" Width="511px" 
+                    style="font-weight: 700; font-family: Impact; background-color: #6666FF" />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style3" rowspan="3">
+                &nbsp;<br />
+                        <asp:Menu ID="Menu3" runat="server" 
+                            style="font-weight: 700; font-size: xx-large; font-family: 'Agency FB'; background-color: #FFFFFF; color: #66FFCC;" 
+                            Orientation="Horizontal" Width="67px" Height="27px" 
+                    Font-Size="XX-Large" BackColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="About Us" Value="About Us">
+                                    <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/AboutUs.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Developer" Value="Developer" NavigateUrl="~/Developer.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Time Table" Value="Time Table" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Fee Payment" Value="Fee Payment" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Transcript" Value="Transcript" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Course Contents" Value="Course Contents" 
+                                        NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    <br />
+                        <asp:Menu ID="Menu4" runat="server" 
+                            
+                    
+                    style="font-size: xx-large; font-family: 'Agency FB'; background-color: #FFFFFF;" BorderStyle="Solid" 
+                            Font-Bold="True" Font-Size="XX-Large" Orientation="Horizontal" 
+                            Width="40px" Height="30px" BackColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Staff" Value="Admission">
+                                    <asp:MenuItem Text="Staff Admission" Value="Staff Admission" 
+                                        NavigateUrl="~/StaffAdmission.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Syllabus" Value="New Item">
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    <br />
+                        <asp:Menu ID="Menu6" runat="server" 
+                            
+                    style="font-weight: 700; font-size: xx-large; font-family: 'Agency FB'; background-color: #FFFFFF;" 
+                    Width="81px" Height="37px" 
+                            Font-Size="XX-Large" BackColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Students" Value="Result">
+                                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Registration" 
+                                        Value="Rgistration">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Transcript" Value="Transcript">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Results" Value="Results">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Time Table" Value="Time Table">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/StudentsAdmission.aspx" Text="Students Admission" 
+                                        Value="Students Admission"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    <br />
+                        <asp:Menu ID="Menu9" runat="server" 
+                            
+                    style="font-weight: 700; font-size: xx-large; font-family: 'Agency FB'; background-color: #FFFFFF;" 
+                    Height="39px" Width="150px" 
+                            Font-Size="XX-Large" BackColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Administrator" Value="Time Table" 
+                                    NavigateUrl="~/AdminLogin.aspx"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    <br />
+                <asp:Menu ID="Menu13" runat="server" 
+                    style="font-weight: 700; font-size: xx-large; font-family: 'Agency FB'">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Portal" Value="Student Portal">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <br />
+                <asp:Menu ID="Menu11" runat="server" Font-Size="XX-Large" 
+                    style="font-family: 'Agency FB'; font-weight: 700">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Log-In" Value="Log-In">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="style4" rowspan="2">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style33">
+                For fast track computer training and business management/ITC planning, the 
+                training days are Thursdays and Saturdays Except for special arrangements, 
+                training days are Monday to Fridays with two hours credit load, with the total 
+                10hrs credit load per work.<br />
+                <asp:Image ID="Image4" runat="server" Height="148px" 
+                    ImageUrl="~/Images/shont3 1.jpg" Width="225px" />
+                <br />
+&nbsp;<span class="style25">Students attending Lectures</span><br />
+                Our training professionals will guide you through the in and out of computer key 
+                manipulations in the listed training codes, we also required that you have an 
+                understanding of the use of English Language.</td>
+        </tr>
+        </table>
     </form>
-<p>
-    &nbsp;</p>
-<p>
-    &nbsp;</p>
-</body>
+    </body>
 </html>
