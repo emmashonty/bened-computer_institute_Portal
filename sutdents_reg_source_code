@@ -1,0 +1,195 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="StudentsRegistration.aspx.vb" Inherits="EmmaProject_2012_2013_3351.StudentsRegistration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Students Registration Page</title>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            text-align: center;
+            background-color: #333399;
+        }
+        #form1
+        {
+            font-weight: 700;
+            font-size: xx-large;
+            font-family: Impact;
+        }
+        .style2
+        {
+            text-align: justify;
+            background-color: #FFFFFF;
+        }
+        .style3
+        {
+            width: 100%;
+            color: #000000;
+        }
+    </style>
+</head>
+<body style="background-color: #FFFFFF">
+    <form id="form1" runat="server">
+    <div class="style1">
+    
+        WELCOME TO STUDENTS REGISTRATION PAGE</div>
+    <asp:Panel ID="Panel1" runat="server" Width="879px" 
+        
+        style="color: #FF3300; font-size: large; font-family: 'Times New Roman', Times, serif; background-color: #CCFFFF; margin-left: 38px;">
+        <div class="style2">
+            <asp:Panel ID="Panel2" runat="server" style="text-align: right">
+                <a href="Home.aspx">Home</a> <a href="Portal.aspx">Portal</a>
+                <a href="Login.aspx">Logout</a></asp:Panel>
+&nbsp;<table class="style3">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        Reg No</td>
+                    <td>
+                        <asp:TextBox ID="txtRegNo" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td>
+                        Sur Name</td>
+                    <td>
+                        <asp:TextBox ID="txtSurName" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Other Name</td>
+                    <td>
+                        <asp:TextBox ID="txtOtherName" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td>
+                        Gender</td>
+                    <td>
+                        <asp:DropDownList ID="txtGender" runat="server" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Female</asp:ListItem>
+                            <asp:ListItem>Male</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Programme</td>
+                    <td>
+                        <asp:DropDownList ID="txtProgramme" runat="server" Height="16px" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Advance Diploma Training</asp:ListItem>
+                            <asp:ListItem>Certificate Training</asp:ListItem>
+                            <asp:ListItem>Computer Engineering</asp:ListItem>
+                            <asp:ListItem>Other Services</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        Programme Duration</td>
+                    <td>
+                        <asp:DropDownList ID="txtDuration" runat="server" Height="16px" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>1 Week</asp:ListItem>
+                            <asp:ListItem>2 Weeks</asp:ListItem>
+                            <asp:ListItem>3 Weeks</asp:ListItem>
+                            <asp:ListItem>1 Month</asp:ListItem>
+                            <asp:ListItem>2 Months</asp:ListItem>
+                            <asp:ListItem>3 Months</asp:ListItem>
+                            <asp:ListItem>4 Months</asp:ListItem>
+                            <asp:ListItem>5 Months</asp:ListItem>
+                            <asp:ListItem>6 Months</asp:ListItem>
+                            <asp:ListItem>1 Year</asp:ListItem>
+                            <asp:ListItem>2 Years</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date Of Registration</td>
+                    <td>
+                        <asp:TextBox ID="txtDate" runat="server" Width="250px" Wrap="False"></asp:TextBox>
+                    </td>
+                    <td>
+                        Address</td>
+                    <td>
+                        <asp:TextBox ID="txtAddress" runat="server" Height="45px" TextMode="MultiLine" 
+                            Width="250px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Religion</td>
+                    <td>
+                        <asp:TextBox ID="txtReligion" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td>
+                        Marital Status</td>
+                    <td>
+                        <asp:DropDownList ID="txtMarital" runat="server" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem></asp:ListItem>
+                            <asp:ListItem>Married</asp:ListItem>
+                            <asp:ListItem>Single</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LGA</td>
+                    <td>
+                        <asp:TextBox ID="txtLGA" runat="server" TextMode="MultiLine" Width="250px" 
+                            Wrap="False"></asp:TextBox>
+                    </td>
+                    <td>
+                        State Of Origin</td>
+                    <td>
+                        <asp:TextBox ID="txtState" runat="server" Width="263px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nationality</td>
+                    <td>
+                        <asp:TextBox ID="txtNationality" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td>
+                        Phone Number</td>
+                    <td>
+                        <asp:TextBox ID="txtPhone" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton 
+                ID="btnSave" runat="server" Height="52px" ImageUrl="~/Documents/submitQ.gif" 
+                Width="123px" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </asp:Panel>
+    </form>
+</body>
+</html>
