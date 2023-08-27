@@ -1,0 +1,235 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="StaffAdmission.aspx.vb" Inherits="EmmaProject_2012_2013_3351.StaffAdmission" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Staff Admission Page</title>
+    <style type="text/css">
+        .style5
+        {
+            color: #000066;
+            font-size: xx-large;
+            font-family: Impact;
+        }
+        .style7
+        {
+            text-align: center;
+            width: 905px;
+        }
+        .style8
+        {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Aharoni;
+        }
+        .style10
+        {
+            width: 100%;
+        }
+        .style11
+        {
+            text-align: left;
+        }
+        </style>
+</head>
+<body style="background-color: #FFFFFF">
+    <form id="form1" runat="server">
+    <asp:Panel ID="Panel1" runat="server" Width="782px">
+        <div class="style7">
+            <asp:Panel ID="Panel3" runat="server">
+                <b><span class="style5">&nbsp;BENED COMPUTER INSTITUTE JOS</span></b><b><span 
+                    class="style5"></span></b><br />
+                <span class="style8"></span><span class="style8">Staff Employment Form</span></asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" style="text-align: right">
+                <a href="Home.aspx" style="text-align: right">Home</a></asp:Panel>
+            <table class="style10">
+                <tr>
+                    <td colspan="2" style="text-align: left">
+                        <asp:Image ID="Image1" runat="server" Height="180px" Width="150px" />
+                        <br />
+                        <asp:TextBox ID="txtPass" runat="server" Height="26px"></asp:TextBox>
+                        <br />
+                        <asp:FileUpload ID="imgUpload" runat="server" />
+                        &nbsp;<br />
+                        <asp:Button ID="btnUpload" runat="server" Height="21px" Text="Upload Picture" />
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        First Names</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtFirstName" runat="server" Width="250px"></asp:TextBox>
+                        <br />
+                    </td>
+                    <td class="style11">
+                        Gender</td>
+                    <td class="style11">
+                        <asp:DropDownList ID="txtGender" runat="server" Height="23px" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Female</asp:ListItem>
+                            <asp:ListItem>Male</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        Other Name(s)</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtOthers" runat="server" Width="250px"></asp:TextBox>
+                        <br />
+                    </td>
+                    <td class="style11">
+                        Address</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtAddress" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        Programme</td>
+                    <td class="style11">
+                        <asp:DropDownList ID="txtProg" runat="server" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Advance Diploma</asp:ListItem>
+                            <asp:ListItem>Certificate</asp:ListItem>
+                            <asp:ListItem>Computer Engineering</asp:ListItem>
+                            <asp:ListItem>Other Services</asp:ListItem>
+                        </asp:DropDownList>
+                        <br />
+                    </td>
+                    <td class="style11">
+                        Phone Number</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtPhone" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style11">
+                        Marital Status</td>
+                    <td class="style11">
+                        <asp:DropDownList ID="txtMarried" runat="server" Height="18px" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Married</asp:ListItem>
+                            <asp:ListItem>Single</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        Religion</td>
+                    <td class="style11">
+                        <asp:DropDownList ID="txtReligion" runat="server" Height="16px" Width="250px">
+                            <asp:ListItem>None</asp:ListItem>
+                            <asp:ListItem>Christian</asp:ListItem>
+                            <asp:ListItem>Hindu</asp:ListItem>
+                            <asp:ListItem>Muslem</asp:ListItem>
+                            <asp:ListItem>Pegan</asp:ListItem>
+                            <asp:ListItem>Others</asp:ListItem>
+                        </asp:DropDownList>
+                        <br />
+                    </td>
+                    <td class="style11">
+                        Qualification</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtQualificate" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style11">
+                        <br />
+                    </td>
+                    <td class="style11">
+                        LGA</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtLGA" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style11">
+                        State</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtState" runat="server" Width="250px"></asp:TextBox>
+                        <br />
+                    </td>
+                    <td class="style11">
+                        Country</td>
+                    <td class="style11">
+                        <asp:TextBox ID="txtCountry" runat="server" Width="250px"></asp:TextBox>
+                    </td>
+                    <td class="style11">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </asp:Panel>
+    <p style="background-color: #FFFFFF">
+                &nbsp;<asp:ImageButton ID="btnSubmit" runat="server" 
+                    ImageUrl="~/Documents/submitQ.gif" />
+            </p>
+    </form>
+    </body>
+</html>
