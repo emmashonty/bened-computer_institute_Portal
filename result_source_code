@@ -1,0 +1,173 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="DiplomaTrans.aspx.vb" Inherits="EmmaProject_2012_2013_3351.DiplomaTrans" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <style type="text/css">
+
+
+        .style6
+        {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .style3
+        {
+            font-size: x-large;
+            font-weight: bold;
+            text-align: left;
+        }
+        .style7
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style1
+        {
+            font-size: x-large;
+            font-weight: bold;
+            margin-left: 160px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Panel ID="Panel1" runat="server">
+            <div>
+                <asp:Image ID="Image2" runat="server" Height="93px" 
+            ImageUrl="~/Images/KyenLogo.jpg" Width="101px" />
+                &nbsp;<span class="style6">KYENPYA COMPUTER FOUNDATION INSTITUTE JOS</span></div>
+            <div>
+                <p class="style3">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Examination Transcript. Owner:
+                    <asp:Label ID="lblOwner" runat="server" style="background-color: #FFFFFF" 
+                BackColor="White"></asp:Label>
+                    <asp:Label ID="lblOwner2" runat="server"></asp:Label>
+                </p>
+                <table class="style7">
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td style="text-align: center">
+                            <b>Aavanced Diploma Training Porgramme</b></td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                </table>
+                <p>
+                    <asp:Label ID="lblMatNo" runat="server" Text="Registration Number:"></asp:Label>
+                    &nbsp;
+                    <asp:TextBox ID="txtRegNo" runat="server" style="font-size: large" 
+                        Width="221px"></asp:TextBox>
+                    &nbsp;
+                    <asp:Label ID="lblPPassword" runat="server" Text="Examination Date:"></asp:Label>
+                    &nbsp;
+                    <asp:TextBox ID="txtDate" runat="server" style="font-size: large" Width="207px"></asp:TextBox>
+                    &nbsp;
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" Text="Sur Name:"></asp:Label>
+                    &nbsp;
+                    <asp:TextBox ID="txtSurName" runat="server" style="font-size: large" 
+                        Width="559px"></asp:TextBox>
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="Other Names:"></asp:Label>
+                    &nbsp;<asp:TextBox ID="txtOthers" runat="server" style="font-size: large" 
+                        Width="559px"></asp:TextBox>
+                </p>
+                <p>
+                    <asp:Label ID="Label25" runat="server" Text="Matricuation Number:"></asp:Label>
+                    <asp:TextBox ID="txtMatNo" runat="server" Width="559px"></asp:TextBox>
+                </p>
+                <p class="style2">
+                    <b><i>Below are the performaance&nbsp;under your specified programme! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i>
+                    </b>
+                </p>
+                <p class="style1">
+                    Course&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score&nbsp;Point&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+                <p style="margin-left: 160px">
+                    1.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label5" runat="server" Text="MAVIS Drill 80-100 words permits:"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:Label ID="lblMavis" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblMRmk" runat="server" Text="Label"></asp:Label>
+                </p>
+                <p style="margin-left: 160px">
+                    2.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label6" runat="server" 
+                        Text="Desktop publish with word applications:"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:Label ID="lblPublish" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblDPRmk" runat="server" Text="Label"></asp:Label>
+                </p>
+                <p style="margin-left: 160px">
+                    3.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label7" runat="server" Text="Accounting/Audit with excel::"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblAccount" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblARmk" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+                </p>
+                <p style="margin-left: 160px">
+                    4.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label8" runat="server" 
+                        Text="Database/MgtbDesign and Application:"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    <asp:Label ID="lblData" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblDBDARmk" runat="server" Text="Label"></asp:Label>
+                </p>
+                <p style="margin-left: 160px">
+                    5.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label10" runat="server" 
+                        Text="Slide management/presentation skills:"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+                    <asp:Label ID="lblPres" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblPRmk" runat="server" Text="Label"></asp:Label>
+                </p>
+                <p style="margin-left: 160px">
+                    6.&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label11" runat="server" Text="Internet:"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:Label ID="lblInter" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblInRmk" runat="server" Text="Label"></asp:Label>
+                    &nbsp;
+                </p>
+                <p style="margin-left: 160px">
+                    &nbsp;</p>
+                <p style="margin-left: 160px">
+                    &nbsp;</p>
+                <p style="margin-left: 160px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Results.aspx">Close Window</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>
+                <p>
+                    <a href="http://www.kyenpyacomputer.com/results/resultPage.aspx?sid=qmhiTr">
+                    www.kyenpyacomputer.com/results/resultPage.aspx?sid=qmhiTr/a&gt;&nbsp;&nbsp; sp; </a>
+                </p>
+            </div>
+        </asp:Panel>
+    
+    </div>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="btnPrint" runat="server" ImageUrl="~/Images/Printer.png" />
+                    </p>
+    </form>
+</body>
+</html>
