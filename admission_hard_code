@@ -1,0 +1,67 @@
+Imports System.Data.OleDb
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Partial Public Class StaffAdmission
+    Inherits System.Web.UI.Page
+
+    Public Shared NuNameTB As TextBox
+    Public Shared NuNameTB1 As TextBox
+    Public Shared NuNameTB2 As DropDownList
+    Public Shared NuNameTB3 As DropDownList
+    Public Shared NuNameTB4 As DropDownList
+    Public Shared NuNameTB5 As TextBox
+    Public Shared NuNameTB6 As DropDownList
+    Public Shared NuNameTB7 As TextBox
+    Public Shared NuNameTB8 As TextBox
+    Public Shared NuNameTB9 As TextBox
+    Public Shared NuNameTB10 As TextBox
+    Public Shared NuNameTB11 As TextBox
+    
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+
+    End Sub
+
+    Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btnSubmit.Click
+        NuNameTB = txtFirstName
+        NuNameTB1 = txtOthers
+        NuNameTB2 = txtGender
+        NuNameTB3 = txtProg
+        NuNameTB4 = txtReligion
+        NuNameTB5 = txtQualificate
+        NuNameTB6 = txtMarried
+        NuNameTB7 = txtLGA
+        NuNameTB8 = txtState
+        NuNameTB9 = txtCountry
+        NuNameTB10 = txtPhone
+        NuNameTB11 = txtAddress
+
+        Dim strSQL As String
+        Dim objCmd As New OleDbCommand
+        Dim Con = New OleDbConnection("PROVIDER=Microsoft.Jet.OLEDB.3.51;Data Source=C:\Users\User\Documents\Visual Studio 2008 2\Projects\EmmaProject 2012 2013 3351\USERS.mdb;")
+        strSQL = "INSERT INTO StaffAdm(FirstName, OtherNames, Gender, MarritalStatus,Religion, Address, LGA, State, Country, Phone, Qualification, Programme)"
+        strSQL = strSQL & "VALUES('" & (txtFirstName.Text) & "', '" & (txtOthers.Text) & "', '" & (txtGender.Text) & "','" & (txtMarried.Text) & "','" & (txtReligion.Text) & "','" & (txtAddress.Text) & "','" & (txtLGA.Text) & "','" & (txtState.Text) & "', '" & (txtCountry.Text) & "', '" & (txtPhone.Text) & "','" & (txtQualificate.Text) & "','" & (txtProg.Text) & "');"
+        Con.Open()
+        objCmd = New OleDbCommand(strSQL, Con)
+        objCmd.ExecuteNonQuery()
+        Con.Close()
+        
+        ClientScript.RegisterStartupScript(Page.[GetType](), "validation", "<script language='javascript'>alert('You have been successfull applied')</script>")
+        Response.Redirect("StaffAddForm.aspx")
+    End Sub
+
+    Protected Sub btnUpload_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnUpload.Click
+        If imgUpload.HasFile Then
+            Dim ImgPath As String = Server.MapPath(("~/Images/" & Convert.ToString(Guid.NewGuid())) + imgUpload.FileName)
+            imgUpload.SaveAs(ImgPath)
+            Dim ShowImgPath As String = ImgPath.Substring(ImgPath.LastIndexOf("\"))
+            Image1.ImageUrl = "~/Images" & ShowImgPath
+            txtPass.Text = "~/Images" & ShowImgPath
+        Else
+            ScriptManager.RegisterStartupScript(Me, Me.[GetType](), "Message", "alert('Please select the image to upload');", True)
+        End If
+        btnUpload.Visible = False
+        imgUpload.Visible = False
+    End Sub
+End Class
