@@ -1,0 +1,62 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Results.aspx.vb" Inherits="EmmaProject_2012_2013_3351.Results" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Check Result Page</title>
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+            width: 1010px;
+            background-color: #6600FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Panel ID="Panel1" runat="server">
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/kyenpye1.jpg" 
+                Height="165px" />
+        </asp:Panel>
+    
+    </div>
+    <div class="style1">
+        <asp:Panel ID="Panel2" runat="server" style="text-align: right">
+            <a href="Home.aspx">Home</a> <a href="Portal.aspx">Portal</a>
+            <a href="Login.aspx">Logout</a>
+        </asp:Panel>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;
+    <asp:Label ID="Label1" runat="server" Text="Programme"></asp:Label>
+    <asp:DropDownList ID="txtProgramme" runat="server" Height="33px" Width="241px">
+        <asp:ListItem>None</asp:ListItem>
+        <asp:ListItem>Certificate</asp:ListItem>
+        <asp:ListItem>Diploma</asp:ListItem>
+        <asp:ListItem>Engineering</asp:ListItem>
+        <asp:ListItem>Others</asp:ListItem>
+    </asp:DropDownList>
+        &nbsp;<br />
+    <br />
+    &nbsp;&nbsp;&nbsp;
+    <asp:Label ID="Label2" runat="server" Text="Reg No:"></asp:Label>
+    <asp:TextBox ID="txtRegNo" runat="server" Width="241px" Height="34px"></asp:TextBox>
+    <br />
+    <br />
+    <asp:Label ID="Label3" runat="server" Text="Password:"></asp:Label>
+    <asp:TextBox ID="txtPWD" runat="server" TextMode="Password" Width="241px" 
+            Height="34px"></asp:TextBox>
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;<asp:ImageButton ID="btnSearch" runat="server" 
+            ImageUrl="~/Images/search.gif" />
+    </div>
+    <p>
+        &nbsp;
+    </p>
+    </form>
+</body>
+</html>
