@@ -1,0 +1,228 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Admin.aspx.vb" Inherits="OnlineSchoolInformationSystem.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Admin Page</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 127%;
+        }
+        .style2
+        {
+            background-color: #993399;
+            width: 167px;
+        }
+        .style3
+        {
+            font-size: x-large;
+        }
+        .style4
+        {
+            background-color: #993399;
+            width: 131px;
+        }
+        .style5
+        {
+            width: 131px;
+        }
+        .style6
+        {
+            background-color: #993399;
+            width: 179px;
+        }
+        .style7
+        {
+            width: 179px;
+        }
+        .style8
+        {
+            background-color: #993399;
+            width: 162px;
+        }
+        .style9
+        {
+            width: 162px;
+        }
+        .style10
+        {
+            background-color: #993399;
+            width: 126px;
+        }
+        .style11
+        {
+            width: 126px;
+        }
+        .style12
+        {
+            width: 167px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Panel ID="Panel1" runat="server">
+            <asp:Panel ID="Panel3" runat="server" style="text-align: center">
+                <asp:Image ID="Image3" runat="server" Height="127px" 
+                    ImageUrl="~/Images/GSSLafiaBana (1).JPG" Width="1105px" />
+                <br />
+                <b><span class="style3">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WELCOME</span></b><b><span class="style3"> 
+                TO GSS LAFIA&#39; ADMIN PAGE</span></b></asp:Panel>
+            <br />
+            <table class="style1">
+                <tr>
+                    <td class="style4">
+                        <asp:Menu ID="Menu1" runat="server" 
+                            style="font-weight: 700; font-size: x-large">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="HOME" Value="HOME">
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style6">
+                        <asp:Menu ID="Menu4" runat="server" 
+                            style="font-weight: 700; font-size: x-large">
+                            <Items>
+                                <asp:MenuItem Text="ABOUT US" Value="ABOUT US"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style8">
+                        <asp:Menu ID="Menu2" runat="server" 
+                            style="font-weight: 700; font-size: x-large">
+                            <Items>
+                                <asp:MenuItem Text="STUDENTS" Value="STUDENTS">
+                                    <asp:MenuItem NavigateUrl="~/CreateStuAccount.aspx" Text="New Student" 
+                                        Value="New Student"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ViewStudents.aspx" Text="View Students Account" 
+                                        Value="View Students Account"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ViewPayment.aspx" 
+                                        Text="View Students Payment List" Value="View Students Payment List">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ViewRegisteredStudents.aspx" 
+                                        Text="View Resgistered Students" Value="View Resgistered Students">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="View Students Results" Value="View Students Results">
+                                        <asp:MenuItem NavigateUrl="~/ViewJuniorResult.aspx" Text="Junior Class" 
+                                            Value="Junior Class"></asp:MenuItem>
+                                        <asp:MenuItem Text="Science Class" Value="Science Class" 
+                                            NavigateUrl="~/ViewSciResult.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Social Science Class" Value="Social Science Class" 
+                                            NavigateUrl="~/ViewSocialSicResult.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Art Class" Value="Art Class" 
+                                            NavigateUrl="~/ViewArtResult.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem 
+                                        Text="Enter Student Result" Value="Enter Student Result">
+                                        <asp:MenuItem NavigateUrl="~/JuniorResultEntry.aspx" 
+                                            Text="Junior Class Result Entry" Value="Junior Class Result Entry">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/SciResultEntry.aspx" 
+                                            Text="Science Class Result Entry" Value="Science Class Result Entry">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/SocialSciResultEntry.aspx" 
+                                            Text="Social Science Class Result Entry" 
+                                            Value="Social Science Class Result Entry"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/ArtResultEntry.aspx" Text="Art Class Result Entry" 
+                                            Value="Art Class Result Entry"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style10">
+                        <asp:Menu ID="Menu6" runat="server" 
+                            style="font-weight: 700; font-size: x-large">
+                            <Items>
+                                <asp:MenuItem Text="ADMIN" Value="ADMIN">
+                                    <asp:MenuItem NavigateUrl="~/AddAdmin.aspx" Text="New Admin" Value="New Admin">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ViewAdmin.aspx" Text="View Admin Users" 
+                                        Value="View Admin Users"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="style2">
+                        <asp:Menu ID="Menu8" runat="server" 
+                            style="font-size: x-large; font-weight: 700">
+                            <Items>
+                                <asp:MenuItem Text="FAQ" Value="FAQ"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style7">
+                        &nbsp;</td>
+                    <td class="style9">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style12">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style7">
+                        &nbsp;</td>
+                    <td class="style9">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style12">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style7">
+                        &nbsp;</td>
+                    <td class="style9">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style12">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style7">
+                        &nbsp;</td>
+                    <td class="style9">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style12">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td class="style7">
+                        &nbsp;</td>
+                    <td class="style9">
+                        &nbsp;</td>
+                    <td class="style11">
+                        &nbsp;</td>
+                    <td class="style12">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </asp:Panel>
+    
+    </div>
+    </form>
+</body>
+</html>
