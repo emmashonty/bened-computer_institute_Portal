@@ -1,0 +1,43 @@
+Imports System.Data.OleDb
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+Partial Public Class DiplomaTrans
+    Inherits System.Web.UI.Page
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        txtRegNo.Text = Transcript.NuNameTB.Text
+        Dim SQL As String
+        Dim dbConnection As OleDbConnection
+        Dim dbCommand As New OleDbCommand
+        Dim dbFilePath As String = "C:\Users\User\Documents\Visual Studio 2008 2\Projects\EmmaProject 2012 2013 3351\USERS.mdb;"
+        SQL = "SELECT Reg_No, Mat_No, Sur_Name, Other_Names, F_Mavis,F_DPublish, F_AExcel, F_DBDApplic, F_Presentation, F_Internet, F_Date, F_MRmk, F_DPRmk, F_AERmk, F_DBDARmk, F_PRmk, F_IRmk FROM DiplomaTrans"
+        dbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+        dbCommand = New OleDbCommand(SQL, dbConnection)
+        Dim data As New OleDbDataAdapter(dbCommand)
+        Dim table As New DataTable("Test")
+        dbConnection.Open()
+        data.Fill(table)
+        txtMatNo.Text = table.Rows(txtRegNo.Text)("Mat_No").ToString()
+        txtSurName.Text = table.Rows(txtRegNo.Text)("Sur_Name").ToString()
+        txtOthers.Text = table.Rows(txtRegNo.Text)("Other_Names").ToString()
+        lblOwner.Text = table.Rows(txtRegNo.Text)("Sur_Name").ToString()
+        lblOwner2.Text = table.Rows(txtRegNo.Text)("Other_Names").ToString()
+        lblMavis.Text = table.Rows(txtRegNo.Text)("F_Mavis").ToString()
+        lblPublish.Text = table.Rows(txtRegNo.Text)("F_DPublish").ToString()
+        lblAccount.Text = table.Rows(txtRegNo.Text)("F_AExcel").ToString()
+        lblData.Text = table.Rows(txtRegNo.Text)("F_DBDApplic").ToString()
+        lblPres.Text = table.Rows(txtRegNo.Text)("F_Presentation").ToString()
+        lblInter.Text = table.Rows(txtRegNo.Text)("F_Internet").ToString()
+        txtDate.Text = table.Rows(txtRegNo.Text)("F_Date").ToString()
+        lblMRmk.Text = table.Rows(txtRegNo.Text)("F_MRmk").ToString()
+        lblDPRmk.Text = table.Rows(txtRegNo.Text)("F_DPRmk").ToString()
+        lblARmk.Text = table.Rows(txtRegNo.Text)("F_AERmk").ToString()
+        lblDBDARmk.Text = table.Rows(txtRegNo.Text)("F_DBDARmk").ToString()
+        lblPRmk.Text = table.Rows(txtRegNo.Text)("F_PRmk").ToString()
+        lblInRmk.Text = table.Rows(txtRegNo.Text)("F_IRmk").ToString()
+    End Sub
+
+    Protected Sub btnPrint_Click(sender As Object, e As ImageClickEventArgs) Handles btnPrint.Click
+
+    End Sub
+End Class
